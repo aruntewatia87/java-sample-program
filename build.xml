@@ -1,0 +1,19 @@
+<project default="compile">
+  <target name="compile">
+    <javac srcdir="." />
+  </target>
+
+  <target name="jar" depends="compile">
+    <jar destfile="hello.jar"
+         basedir="."
+         includes="**/*.class"
+         />
+  </target>
+
+ <target name="run" depends="jar">
+    <java classname="SimpleWordCounter"
+          classpath="hello.jar"
+          fork="true"
+          />
+  </target>
+</project>

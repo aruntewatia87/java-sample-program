@@ -1,6 +1,6 @@
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.Map;
+import java.lang.*;
 import java.util.Scanner;
 import java.util.TreeMap;
 
