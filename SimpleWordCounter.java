@@ -23,8 +23,8 @@ public class SimpleWordCounter {
             
             // show results
             for(String word : wordCount.keySet())
-                System.out.println(word + " " + wordCount.get(word));
-//            System.out.println(wordCount.size());
+                System.out.print(word + " " + wordCount.get(word));
+            System.out.println(wordCount.size());
         }
         catch(IOException e) {
             System.out.println("Unable to read from file.");
